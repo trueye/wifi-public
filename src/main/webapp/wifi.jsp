@@ -32,8 +32,8 @@
 	<%
 	System.out.println("hello");
 	WifiService wifiAPI = new WifiService();
-	//wifiAPI.createTableWifi();
-	//wifiAPI.createTableHistory();
+	wifiAPI.createTableWifi();
+	wifiAPI.createTableHistory();
 	//wifiAPI.dropWifi();
 	//wifiAPI.dropHistory();
 	List<Wifi> wifiList = new ArrayList<>();

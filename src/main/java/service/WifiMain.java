@@ -14,12 +14,12 @@ public class WifiMain {
 //		wifiAPI.createTableWifi(); // 테이블 생성
 //		wifiAPI.createTableHistory();
 //		wifiAPI.load_wifi(); // DB 저장
-//		wifiAPI.list();	// 리스트 출력
+		wifiAPI.list();	// 리스트 출력
 //		wifiAPI.deleteWifi(); // 테이블 비우기
 //		wifiAPI.deleteHistory();
 //		wifiAPI.dropWifi();	// 테이블 삭제
 //		wifiAPI.dropHistory();
-
+		
 
 	}
 }
