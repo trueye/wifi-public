@@ -82,7 +82,7 @@ public class WifiService {
 
 	// 와이파이 테이블 생성
 	public void createTableWifi() {
-
+		
 		connection();
 
 		String sql = "create table wifi_table " + " (MGR_NO varchar(30)," + " WRDOFC varchar(30),"
@@ -99,14 +99,14 @@ public class WifiService {
 			e.printStackTrace();
 		}
 		System.out.println("테이블 생성 완료");
-
+		
 		closeConnection();
 
 	}
 
 	// 히스토리 테이블 생성
 	public void createTableHistory() {
-
+	
 		connection();
 
 		String sql = "create table history_table " + " (HIS_NUM INTEGER primary key autoincrement , LAT rear,"
@@ -120,7 +120,7 @@ public class WifiService {
 			e.printStackTrace();
 		}
 		System.out.println("테이블 생성 완료");
-
+		
 		closeConnection();
 
 	}
@@ -333,9 +333,6 @@ public class WifiService {
 			start = start + 1000;
 			end = end + 1000;
 
-			System.out.println("start: " + start);
-			System.out.println("end: " + end);
-
 		}
 //		ps.executeBatch();
 //		conn.commit();
@@ -354,7 +351,6 @@ public class WifiService {
 		connection();
 
 		String sql = "insert into history_table (LAT, LNT, REG_DATE) values " + "(?, ?, ?)";
-		System.out.println("추가하냐");
 
 		try {
 			ps = conn.prepareStatement(sql);
@@ -368,9 +364,9 @@ public class WifiService {
 			e.printStackTrace();
 		}
 
-		System.out.println(x);
-		System.out.println(y);
-		System.out.println(regDate);
+		//System.out.println(x);
+		//System.out.println(y);
+		//System.out.println(regDate);
 
 		closeConnection();
 

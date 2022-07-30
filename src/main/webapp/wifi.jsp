@@ -34,17 +34,20 @@
 	WifiService wifiAPI = new WifiService();
 	wifiAPI.createTableWifi();
 	wifiAPI.createTableHistory();
+	//wifiAPI.deleteWifi();
 	//wifiAPI.dropWifi();
 	//wifiAPI.dropHistory();
+	
+	
 	List<Wifi> wifiList = new ArrayList<>();
 	
 	String lat = request.getParameter("LAT");
 	String lnt = request.getParameter("LNT");
 			
-	System.out.println(lat);
-	System.out.println(lnt);		
+	//System.out.println("LAT: " + lat);
+	//System.out.println("LNT: " + lnt);		
 
-	//wifiAPI.deleteWifi();
+	
 	%>
 	
 	<%
