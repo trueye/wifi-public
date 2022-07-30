@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.time.LocalDateTime;
 
 import org.json.simple.parser.ParseException;
+import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class WifiMain {
 	public static void main(String[] args) throws SQLException, IOException, ParseException, ClassNotFoundException {
@@ -20,6 +21,6 @@ public class WifiMain {
 //		wifiAPI.dropWifi();	// 테이블 삭제
 //		wifiAPI.dropHistory();
 		
-
 	}
+	
 }
